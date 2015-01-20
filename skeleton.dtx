@@ -1,0 +1,201 @@
+% \iffalse meta-comment
+%
+% This is file `skeleton.dtx'.
+%
+% Copyright (C) 2015 by Liam Huang
+% -----------------------------------
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+%
+% The Current Maintainer of this work is Liam Huang.
+%
+%<*internal>
+\iffalse
+%</internal>
+%<*readme>
+# The `skeleton` Class
+
+This work is released under the [LaTeX Project Public
+License](http://www.latex-project.org/lppl.txt), v1.3c or later.
+
+## Installation
+
+This work consists of the file skeleton.dtx,
+and the derived files          skeleton.cls,
+                               skeleton.pdf,
+                               README and
+                               LICENSE.
+
+To install this class, you should copy `skeleton.cls` to
+`TEXMF/tex/latex/skeleton/`, copy `skeleton.dtx` to
+`TEXMF/source/latex/skeleton/` and copy other files to
+`TEXMF/doc/latex/skeleton/` and then run `texhash`.
+
+## Author
+
+[Liam Huang][liam-ctan]
+
+Email: liamhuang0205+skeleton@gmail.com
+
+If you are interested in the process of development you may observe
+
+<https://github.com/LiamHuang0205/skeleton>
+
+[liam-ctan]: http://www.ctan.org/author/huang-l
+%</readme>
+%<*license>
+Released under the [LaTeX Project Public
+License](http://www.latex-project.org/lppl.txt), v1.3c or later.
+
+The package has status 'maintained': the current maintainer is
+[Liam Huang](liamhuang0205+skeleton@gmail.com).
+%</license>
+%<*internal>
+\fi
+\begingroup
+  \def\temp{LaTeX2e}
+\expandafter\endgroup\ifx\temp\fmtname\else
+\csname fi\endcsname
+%</internal>
+%<*install>
+\input docstrip.tex
+\keepsilent
+\preamble
+
+-----------------------------------
+
+This is a generated file.
+
+Copyright (C) 2015 by Liam Huang
+
+This work may be distributed and/or modified under the
+conditions of the LaTeX Project Public License, either version 1.3
+of this license or (at your option) any later version.
+The latest version of this license is in
+  http://www.latex-project.org/lppl.txt
+and version 1.3 or later is part of all distributions of LaTeX
+version 2005/12/01 or later.
+
+This work has the LPPL maintenance status `maintained'.
+
+The Current Maintainer of this work is Liam Huang.
+
+\endpreamble
+\postamble
+
+This work consists of the file \jobname.dtx,
+and the derived files          \jobname.cls,
+                               \jobname.pdf,
+                               README and
+                               LICENSE.
+\endpostamble
+
+\generate{%
+  \usedir{tex/latex/\jobname}%
+  \file{\jobname.cls}{\from{\jobname.dtx}{class}}%
+  \nopreamble\nopostamble
+  \file{README.md}{\from{\jobname.dtx}{readme}}%
+  \file{LICENSE.md}{\from{\jobname.dtx}{license}}%
+}
+
+\Msg{*********************************************************}
+\Msg{*}
+\Msg{* To finish the installation you have to}
+\Msg{*}
+\Msg{* produce the user manual run the file \jobname.dtx}
+\Msg{* through XeLaTeX --shell-escape,}
+\Msg{*}
+\Msg{* move the following file into a directory searched}
+\Msg{* \space\space by TeX:}
+\Msg{*}
+\Msg{* \space\space\jobname.cls to TEXMF/tex/latex/skeleton/,}
+\Msg{* \space\space\jobname.dtx to TEXMF/sourct/latex/skeleton/,}
+\Msg{* \space\space other files to TEXMF/doc/latex/skeleton,}
+\Msg{*}
+\Msg{* and then run texhash.}
+\Msg{*}
+\Msg{* Happy TeXing!}
+\Msg{*********************************************************}
+\endbatchfile
+%</install>
+%<*internal>
+\fi
+%</internal>
+%<*driver>
+\ProvidesFile{skeleton.dtx}
+  [2015/01/20 v1.0 The Skeleton .dtx File]
+\documentclass{ltxdoc}
+\EnableCrossrefs
+\CodelineIndex
+\RecordChanges
+\begin{document}
+  \DocInput{\jobname.dtx}
+\end{document}
+%</driver>
+% \fi
+%
+% \CheckSum{0}
+% \CharacterTable
+%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
+%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+%   Digits        \0\1\2\3\4\5\6\7\8\9
+%   Exclamation   \!     Double quote  \"     Hash (number) \#
+%   Dollar        \$     Percent       \%     Ampersand     \&
+%   Acute accent  \'     Left paren    \(     Right paren   \)
+%   Asterisk      \*     Plus          \+     Comma         \,
+%   Minus         \-     Point         \.     Solidus       \/
+%   Colon         \:     Semicolon     \;     Less than     \<
+%   Equals        \=     Greater than  \>     Question mark \?
+%   Commercial at \@     Left bracket  \[     Backslash     \\
+%   Right bracket \]     Circumflex    \^     Underscore    \_
+%   Grave accent  \`     Left brace    \{     Vertical bar  \|
+%   Right brace   \}     Tilde         \~}
+%
+% \changes{v1.0}{2015/01/20}{First Release}
+%
+% \GetFileInfo{\jobname.dtx}
+%
+% \DoNotIndex{\test}
+%
+% \title{The \textsf{\jobname} class\thanks{This Document
+%   corresponds to \textsf{\jobname}~\fileversion,
+%   dated \filedate.}}
+% \author{Liam Huang \\ \texttt{liamhuang0205+\jobname@gmail.com}}
+% \date{\filedate}
+%
+% \maketitle
+%
+% \begin{abstract}
+%   \pkg{skeleton} 由 Liam Huang 设计制作，旨在为山大学子建立一个
+%   简单易用的论文标准模板。
+% \end{abstract}
+%
+% \tableofcontents
+% \section{Introduction}
+% \section{Installation}
+% \section{Usage}
+% \appendix
+% \StopEventually{}
+% \section{Implementation}
+% \subsection{Basic Information}
+%    \begin{macrocode}
+%<*class>
+\NeedsTeXFormat{LaTeX2e}[1999/12/01]
+\ProvidesClass{skeleton}
+  [2015/01/20 v1.0 The Skeleton .dtx File]
+%    \end{macrocode}
+%    \begin{macrocode}
+%</class>
+%<class>\endinput
+%    \end{macrocode}
+% \iffalse
+% \fi
+% \Finale
+\endinput
